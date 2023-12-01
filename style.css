@@ -31,7 +31,6 @@ main {
   margin-top: 75px;
   background: rgba(0, 0, 0, 0.85);
   position: absolute;
-  overflow: visible;
   border-radius: 30px;
   border: 10px double rgb(255, 255, 255);
   box-shadow: 18px 18px 15px rgba(13, 12, 12, 0.8);
@@ -137,5 +136,6 @@ footer {
 .p-footer {
   font-family: monospace;
   font-size: 18px;
-  text-align: right;
+  text-align: center;
+  line-height: 1.4;
 }
