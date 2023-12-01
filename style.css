@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+
+main {
+  background-color: transparent;
+  display: flex;
+  margin-top: 25px;
+  width: 100vw;
+}
+
+.div-logo {
+  margin-left: -75px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 30px;
+  border: 5px solid black;
+  animation: a_div-logo 7s linear infinite;
+  box-shadow: 18px 18px 15px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.div-console {
+  left: 0px;
+  margin-top: 75px;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  overflow: visible;
+  border-radius: 30px;
+  border: 10px double rgb(255, 255, 255);
+  box-shadow: 18px 18px 15px rgba(13, 12, 12, 0.8);
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.p-console {
+  color: white;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: 175px;
+  margin-inline: 100px;
+  margin-bottom: 50px;
+}
+
+.cmt {
+  color: grey;
+}
+.img-logo {
+  display: inline-block;
+  margin-left: 0;
+  animation: a_logo 7s linear infinite;
+}
+
+@keyframes a_logo {
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes a_div-logo {
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animated-background-wrap {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.animated-background {
+  background-image: url(bk4k.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+
+  scale: 2;
+
+  animation: rotate 300s linear infinite;
+}
+
+@keyframes rotate {
+  50% {
+    scale: 4;
+    transform: rotate(180deg);
+  }
+  100% {
+    scale: 2;
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 75px;
+  width: 250px;
+  overflow: hidden;
+  padding-inline: 50px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+.div-color-theme {
+  margin-top: 25px;
+  margin-left: 10px;
+  float: left;
+  background-color: red;
+  border-radius: 50px;
+}
+
+.p-footer {
+  font-family: monospace;
+  font-size: 18px;
+  text-align: right;
+}
